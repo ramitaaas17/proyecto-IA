@@ -113,7 +113,7 @@ class InterfazBusquedasIA:
     
     def _crear_seccion_carga(self, parent):
         """Crea la sección de carga de grafos"""
-        card = CardFrame(parent, title="📂 Cargar Grafo")
+        card = CardFrame(parent, title=" Cargar Grafo")
         card.pack(fill=tk.X, pady=(0, 15))
         
         content = tk.Frame(card, bg=COLORS['bg_medium'])
@@ -133,7 +133,7 @@ class InterfazBusquedasIA:
     
     def _crear_seccion_config(self, parent):
         """Crea la sección de configuración"""
-        card = CardFrame(parent, title="⚙️ Configuración")
+        card = CardFrame(parent, title=" Configuración")
         card.pack(fill=tk.X, pady=(0, 15))
         
         content = tk.Frame(card, bg=COLORS['bg_medium'])
@@ -199,7 +199,7 @@ class InterfazBusquedasIA:
         
         # Botón comparar
         btn_comparar = RoundedButton(card,
-                                     text="⚖️ COMPARAR",
+                                     text=" COMPARAR",
                                      command=self.ejecutar_comparativa,
                                      bg_color=COLORS['accent_orange'],
                                      width=250, height=50)
@@ -207,7 +207,7 @@ class InterfazBusquedasIA:
     
     def _crear_seccion_resultados(self, parent):
         """Crea la sección de resultados"""
-        card = CardFrame(parent, title="📊 Resultados")
+        card = CardFrame(parent, title=" Resultados")
         card.pack(fill=tk.BOTH, expand=True)
         
         # Área de texto con scroll
@@ -262,7 +262,7 @@ class InterfazBusquedasIA:
         # Mensaje placeholder
         self.lbl_viz_placeholder = tk.Label(
             self.canvas_frame,
-            text="📂\n\nCarga un grafo para\nvisualizarlo aquí",
+            text="\n\nCarga un grafo para\nvisualizarlo aquí",
             font=('Segoe UI', 18),
             bg=COLORS['bg_light'],
             fg=COLORS['text_secondary']

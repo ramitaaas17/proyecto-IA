@@ -3,20 +3,20 @@ Configuración de estilos y colores para la aplicación
 Aquí se definen todos los colores y fuentes que usaremos
 """
 
-# Paleta de colores oscura y moderna
+# Paleta de colores clara y cálida - Fondo claro, texto oscuro
 COLORS = {
-    'bg_dark': '#0d1117',           # Fondo oscuro principal
-    'bg_medium': '#161b22',         # Fondo medio para cards
-    'bg_light': '#1c2128',          # Fondo claro para inputs
-    'accent_blue': '#58a6ff',       # Azul para elementos importantes
-    'accent_purple': '#bc8cff',     # Morado para acentos
-    'accent_green': '#3fb950',      # Verde para éxito
-    'accent_orange': '#ff9800',     # Naranja para alertas
-    'accent_red': '#f85149',        # Rojo para errores
-    'text_primary': '#e6edf3',      # Texto principal
-    'text_secondary': '#8b949e',    # Texto secundario
-    'border': '#30363d',            # Color de bordes
-    'hover': '#21262d'              # Color al pasar mouse
+    'bg_dark': '#fff5e6',           # Fondo crema muy claro
+    'bg_medium': '#ffe9cc',         # Fondo durazno suave
+    'bg_light': '#ffffff',          # Blanco puro para inputs
+    'accent_blue': '#2196F3',       # Azul vibrante
+    'accent_purple': '#9C27B0',     # Morado vibrante
+    'accent_green': '#4CAF50',      # Verde vibrante
+    'accent_orange': '#FF6F00',     # Naranja intenso
+    'accent_red': '#f44336',        # Rojo vibrante
+    'text_primary': '#2c1810',      # Texto café oscuro
+    'text_secondary': '#5d4037',    # Texto café medio
+    'border': '#d4a574',            # Borde durazno/canela
+    'hover': '#fff0db'              # Hover amarillo suave
 }
 
 # Fuentes para toda la aplicación
