@@ -82,7 +82,6 @@ def busqueda_profundidad(grafo, nodo_ini, nodo_fin, max_profundidad=50):
     while pila:
         nodo_actual, camino, costo_acumulado, profundidad = pila.pop()
         
-        # Límite de seguridad para evitar ciclos infinitos
         if profundidad > max_profundidad:
             continue
         
@@ -267,7 +266,6 @@ def busqueda_beam(grafo, nodo_ini, nodo_fin, heuristica, ancho_haz=2):
         if not nivel_actual:
             break
         
-        # Ordenar por heurística y mantener solo los mejores
         nivel_actual.sort(key=lambda x: x[0])
         nivel_actual = nivel_actual[:ancho_haz]
         
@@ -315,11 +313,9 @@ def busqueda_branch_and_bound(grafo, nodo_ini, nodo_fin):
         costo_actual, _, camino = heapq.heappop(heap)
         nodo_actual = camino[-1]
         
-        # Poda por costo
         if costo_actual >= mejor_costo:
             continue
         
-        # Poda por visitados con mejor costo
         if nodo_actual in visitados_con_costo and visitados_con_costo[nodo_actual] <= costo_actual:
             continue
         

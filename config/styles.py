@@ -4,7 +4,7 @@ Aquí se definen todos los colores y fuentes que usaremos
 """
 
 # Paleta de colores clara y cálida - Fondo claro, texto oscuro
-COLORS = {
+COLORS = { 
     'bg_dark': '#fff5e6',           # Fondo crema muy claro
     'bg_medium': '#ffe9cc',         # Fondo durazno suave
     'bg_light': '#ffffff',          # Blanco puro para inputs
